@@ -1,8 +1,8 @@
-import { Response } from 'express';
+import { Response } from "express";
 
-export function sendSuccess(res: Response, statusCode: number, data?: any) {
+export function sendSuccess<T>(res: Response, statusCode: number, data?: T) {
   return res.status(statusCode).json({
     success: true,
-    data: data || {}
+    data: data ?? {},
   });
 }
