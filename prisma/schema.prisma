@@ -7,6 +7,11 @@ generator client {
   provider = "prisma-client-js"
 }
 
+enum TripRequestStatus {
+  pending
+  canceled
+}
+
 model TripRequest {
   id             String   @id @default(uuid())
   requesterName  String
@@ -16,7 +21,7 @@ model TripRequest {
   returnAt       DateTime
   purpose        String
   passengerCount Int
-  status         String   @default("pending") // Estados válidos: pending, canceled
+  status         TripRequestStatus   @default(pending) // Estados válidos: pending, canceled
   createdAt      DateTime @default(now())
 
   @@map("trip_requests") // Mapeamento da tabela em kebab/snake case internamente
