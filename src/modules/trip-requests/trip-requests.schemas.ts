@@ -9,3 +9,5 @@ export const createTripRequestSchema = z.object({
   purpose: z.string().min(1),
   passengerCount: z.number().int().positive(),
 });
+
+export type CreateTripRequestSchema = z.infer<typeof createTripRequestSchema>;
