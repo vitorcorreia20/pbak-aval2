@@ -39,7 +39,7 @@ npm install
 
 Crie o arquivo de ambiente local baseando-se no arquivo de exemplo fornecido no repositório:
 ```bash
-cp .env.exaample .env
+cp .env.example .env
 ```
 ### 3. Subir o Banco de Dados (MySQL via Docker)
 
