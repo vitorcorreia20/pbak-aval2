@@ -10,10 +10,10 @@
 Este repositório contém a avaliação da disciplina de Programação Back-end. Trata-se de uma API RESTful para o gerenciamento de solicitações de viagens institucionais, construída com TypeScript, Express e Prisma.
 
 ## Equipe:
-- Felipe Martins
-- Jordan Fernandes
-- Henrique Veras
-- Vitor Correia
+- Felipe Martins dos Santos Silva
+- Jordan Fernandes de Carvalho
+- Henrique Veras Cordeiro
+- Vitor dos Santos Correia
 
 ## 📌 Regras de Negócio Implementadas
 
